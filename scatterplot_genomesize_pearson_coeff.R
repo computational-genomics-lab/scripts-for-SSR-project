@@ -1,3 +1,4 @@
+#the Pearson correlation coefficient is used to show the relation between the mean of SSR region and the genome size 
 library(ggplot2)
 library(ggpubr)
 
