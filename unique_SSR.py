@@ -24,7 +24,7 @@ with open(query_SSR,"r") as ref:
 
 
 #A function is defined to make a csv file containing the unique SSR motifs in the query file. The function also takes these motifs as keys and fetches all the relevant information from the query SSR file which was taken as input. This was written in another csv file. This function also prints the common SSR motifs between the query and the reference files
-
+#put this at the top
 def open_func(x):
 	list_i=[]
 	for files in x:
