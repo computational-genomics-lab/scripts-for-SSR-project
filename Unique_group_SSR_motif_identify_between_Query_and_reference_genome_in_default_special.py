@@ -3,7 +3,7 @@
 #input file : EX. Phyag_NZFS3770.fna
 #In default mode it will detect the unique group motifs of the input genome, comparing the all other genomes in the present directory
 #In special mode, We have to put the names of the reference genomes along with the query genome name.
-#Run the program as python3 unique_group_motif_ssr_identify_default_special.py
+#Run the program as python3 Unique_group_SSR_motif_identify_between_Query_and_reference_genome_in_default_special.py
 #First enter the name of the query genome as Phyag_NZFS3770.fna
 #Then enter the mode if special
 #Then enter the number of reference genome if 1
