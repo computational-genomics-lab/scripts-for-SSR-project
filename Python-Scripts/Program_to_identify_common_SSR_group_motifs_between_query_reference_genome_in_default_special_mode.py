@@ -1,13 +1,14 @@
 #Python program to identify common Group SSR motifs between query and reference genomes. 
-#Required files - SAT2 and SSR files of each genome must be in the same directory of the program
-#input file : EX. Phyag_NZFS3770.fna
-#In default mode it will detect the unique group motifs of the input genome, comparing the all other genomes in the present directory
+#Required files - SAT2 and SSR files of each genome must be in the same directory as the program
+#Eg of input file :  Phyag_NZFS3770.fna
+#In default mode it will detect the unique group motifs of the input genome, comparing  all the other genomes in the present directory
 #In special mode, We have to put the names of the reference genomes along with the query genome name.
 #Run the program as python3 Program_to_identify_common_SSR_group_motifs_between_query_reference_genome_in_default_special_mode.py
-#First enter the name of the query genome as Phyag_NZFS3770.fna
-#Then enter the mode if special
-#Then enter the number of reference genome if 1
-#Then enter the name of reference genome as the name of SAT2 file name such as Phyag_NZFS3772.fna.ssr.sat2
+#Example of usage in special mode:
+#At first prompt enter the name of the query genome as Phyag_NZFS3770.fna
+#At prompt for mode enter special
+#Then enter the number of reference genome(s) , say 1
+#Then enter the name of reference genome(name of SAT2 file) such as Phyag_NZFS3772.fna.ssr.sat2
 
 from pathlib import Path
 import itertools
