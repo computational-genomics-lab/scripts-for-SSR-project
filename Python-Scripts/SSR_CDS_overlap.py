@@ -1,3 +1,9 @@
+# program to calculate the total frequency of trinucleotide SSR motifs present in the coding region (CDS) of a particular gene
+
+#usage : python3 SSR_CDS_overlap.py Phyag_NZFS3770.tri_gene.txt Phyag_NZFS3770.ffn for organism Phytophthora agathicida isolate NZFS3770.
+# *.tri_gene.txt contains 2 columns: SSR motif and gene ids. This information was obtained from doing a bed intersection between SSR file and gff3 fiile.
+# *.ffn contains gene ids and coding (CDS) regions. the original file was modified by a bash script so that gene ids of .ffn files and .tri_gene_txt files have
+# the same format and can be matched 
 import pandas as pd
 import sys
 dataframe1 = pd.read_csv(sys.argv[1], sep="\t", header=None)
