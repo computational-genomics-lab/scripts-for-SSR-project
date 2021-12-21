@@ -1,8 +1,8 @@
 #Python script to calculate SSR Length, SSR Density, GC Percentage of SSR, SSR Coverage 
 #Here the GMATA derived SSR files are the input files; We have to keep the SSR files for all the genomes in the same directory
 #as the script. 
-#We need to provide a input csv file containing the SSR file name of the genome on the first column and genome size in MB in the second coloumn.
-#The SSR file name in the csv file must be same with SSR files present in the same directory. 
+#We need to provide an input csv file containing the SSR file name of the genome on the first column and genome size in MB in the second coloumn.
+#The SSR file name in the csv file must be same as the SSR files present in the same directory. 
 #Example csv file format : 
 # Genome,Genome_size_in_MB
 # Phyag_NZFS3770.fna.ssr,37
