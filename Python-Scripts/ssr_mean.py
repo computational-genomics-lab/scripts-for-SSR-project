@@ -1,5 +1,5 @@
-#script to find the mean of SSR regions of all the organisms
-#based on these values the scatterplots were made
+#script to find the mean values of SSR regions of all the organisms
+#based on these values, scatterplots were plotted
 
 import pandas as pd
 import csv
