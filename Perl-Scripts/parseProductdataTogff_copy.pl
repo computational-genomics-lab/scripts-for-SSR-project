@@ -3,7 +3,7 @@
 
 # This script takes the eggnog annotation file as well as the gff3 file annotated by funannotate
 # Due to some parsing errors, the gff3 files are not having correct product annotations
-# This script replaces the annotations in the gff3 file from the eggnog annotatin files 
+# This script replaces the annotations in the gff3 file from the eggnog annotation files 
 # Author: Sucheta
 # This script is modified to produce the 3' and 5' Flanking Intergenic distances
 # Date : 21st Oct 2021
