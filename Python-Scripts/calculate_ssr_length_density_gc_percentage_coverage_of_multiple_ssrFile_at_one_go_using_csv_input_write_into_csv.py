@@ -15,6 +15,7 @@
 #calculate SSR coverage (% of genome covered)
 
 #SSR_coverage=(float(total_ssr_length_across_genome)/(float(Genomesize_in_MB)*(float(pow(10,6)))))*100
+#The output is all stored in a file called ssr_results.csv
 
 import pandas as pd
 import csv
@@ -71,12 +72,8 @@ for files in lst1:
 		
 print (data)
 
-
-		
-
-
 header = ["Genome_name","ssr_length","gc_percentage_of_ssr","ssrDensity","ssrCoverage","no_of_ssr","no_of_ssr_motif"]
-with open('ssr.csv', 'w', encoding='UTF8') as f:
+with open('ssr_results.csv', 'w', encoding='UTF8') as f:
     writer = csv.writer(f)
 
     # write the header
