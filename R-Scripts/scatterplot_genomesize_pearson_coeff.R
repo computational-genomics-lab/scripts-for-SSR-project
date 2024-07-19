@@ -1,4 +1,6 @@
 #the Pearson correlation coefficient is used to show the relation between the mean of SSR region and the genome size 
+#excel file has two columns "Genome_size" and "mean" representing the genome size of the organism isolate and the mean of the
+#SSR region respectively.
 library(ggplot2)
 library(ggpubr)
 library(readxl)
