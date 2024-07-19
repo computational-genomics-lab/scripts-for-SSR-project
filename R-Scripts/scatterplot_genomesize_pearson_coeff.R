@@ -1,7 +1,9 @@
 #the Pearson correlation coefficient is used to show the relation between the mean of SSR region and the genome size 
 library(ggplot2)
 library(ggpubr)
+library(readxl)
 
+ssr_mean_genome_size <- read_excel("ssr_mean_genome_size.xlsx")
 ggscatter(ssr_mean_genome_size, x = "Genome_size", y = "mean",
           add = "reg.line", conf.int = TRUE,
           cor.coef = TRUE,  cor.coef.size = 4,  cor.method = "pearson",
