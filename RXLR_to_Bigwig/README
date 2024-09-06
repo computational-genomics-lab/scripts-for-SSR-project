@@ -1,0 +1,29 @@
+This directory contains the following files (which can be modified according to needs) :
+
+1) convert_fasta_gff.py file contains the code to generate gff files from RXLR orf translated fasta file which has the following format :
+
+>Scaffold_1_8154_1 [4698684 - 4698896]
+MCGLSLTTHPMSTKRYFCAIGRVRATSXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XLSTNQLGRLF
+>Scaffold_1_8155_1 [4699065 - 4699277]
+MVSADIRDRVAGTTCFTSLLPSELTSDGGCDTKGDNSRCVFRGSDHDFRVWPTARPRPTT
+LCFSPIQVFTV
+>Scaffold_1_8390_1 [4827245 - 4826958] (REVERSE SENSE)
+MNRDSSPPSKARSSRGVSRIGSGGAGERDAAALSTSLSTRSPTLSQNFSSPLSSPLLLLL
+SLLSLKSLKSLKSLTLKSLKSLKMLKTKVPSAGVTF
+
+the gff file which will be generated is of the following format :
+
+Scaffold_1      Genbank gene    108     587     .       +       .       ID=RXLR1;name=RXLR1;product=RXLR1
+Scaffold_1      Genbank gene    1113    1286    .       +       .       ID=RXLR2;name=RXLR2;product=RXLR2
+Scaffold_1      Genbank gene    4827245 4826958 .       -       .       ID=RXLR8390;name=RXLR8390;product=RXLR8390
+
+2) swapper.sh file contains code to swap the start and end position columns in the case of reverse strand RXLR positions overlapping with the positive strand positions
+
+3) gff_bedgraph.py file contains code to convert the gff file into bedgraph file. The bedgraph file has the following format :
+
+JAIKVF010000001.1       1       198     609
+JAIKVF010000001.1       437     742     608
+JAIKVF010000001.1       537     1613    607
+
+4) rxlr_to_bigwig.sh file contains code which calls the gff_bedgraph.py file to first generate the bedgraph file, sort it and then subsequently generate the bigwig file using bedGraphToBigWig tool. 
